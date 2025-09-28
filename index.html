@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chat Interface - New User</title>
+<style>
+  /* Basic reset */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ccc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top header */
+  header {
+    background-color: #1f1f1f;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  header .logo {
+    color: #00bfff;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  header .icons {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+  }
+
+  header .icon {
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+  }
+
+  /* Main content area */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Floating '+' button */
+  .floating-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #e53935; /* red */
+    color: white;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ch...</div>
+  <div class="icons">
+    <div class="icon" title="Add Contact">+</div>
+    <div class="icon" title="Wi-Fi">&#128246;</div> <!-- Wi-Fi symbol -->
+    <div class="icon" title="Brightness">&#9728;</div> <!-- Sun symbol -->
+    <div class="icon" title="Privacy">&#128274;</div> <!-- Lock symbol -->
+  </div>
+</header>
+
+<main>
+  Add email ✉️ to send messages.
+</main>
+
+<div class="floating-btn" title="New Chat">+</div>
+
+</body>
+</html>
